@@ -1,11 +1,11 @@
-year, mon, day = map(int, input('태어난 연월일을 XXXX.XX.XX식으로 입력해주세요 ex)2025.04.25').split('.'))
-Ryear, Rmon, Rday = map(int, input('현재 연월일을 입력헤주세요').split('.'))
+year, mon, day = map(int, input('태어난 연월일을 XXXX.XX.XX식으로 입력해주세요 ex)2025.04.25    ').split('.'))
+Ryear, Rmon, Rday = map(int, input('현재 연월일을 입력헤주세요        ').split('.'))
 
 #현재 날짜와 태어난 날짜 받기
 
 
 
-assert  Ryear > 2025 and Rmon >12 and mon > 12 and day > 31 and Rday > 31, '올바른 년도와 월,일을 입력해 주세요'
+assert   Rmon < 13 and mon < 13 and day < 31 and Rday < 31, '올바른 년도와 월,일을 입력해 주세요'
 #잘못된 값을 입력했을 때의 오류 출력
 
 

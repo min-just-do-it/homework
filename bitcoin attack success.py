@@ -1,7 +1,7 @@
 import math
 
 q = 0.1
-
+print("q=",q)
 def attack(q, z):
     p = 1.0 - q
     lambda_ = z * (q / p)
@@ -24,4 +24,4 @@ def attack(q, z):
 
 for z in range(11):  # 0부터 10까지
     prob = attack(q, z)
-    print(z, f"q= {prob:.7f}")
+    print("z=",z, f"q= {prob:.7f}")
